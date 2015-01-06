@@ -14,12 +14,17 @@
         if (tmp1==1) {
                         $("#resource_open1").show(1000);
                         tmp1=0 ;
-                             $(".slider").css("z-index","-1").css("opacity",".5") ;
-                }
+
+
+                             $(".slider").css("z-index","-1").css("opacity","0") ;
+                             $(".onclick_image").css("display","block").css("opacity","0.5") ;
+                             }
                 else{
                         $("#resource_open1").hide(1000);
                         tmp1=1 ;
                         $(".slider").css("z-index","-1").css("opacity","1") ;
+                        $(".onclick_image").css("display","none") ;
+                        
                 }
         
         /*$("#lecture_openwb1").hide(1000);
@@ -61,12 +66,14 @@
          if (tmp2==1) {
                         $("#lecture_open1").show(1000);
                         tmp2=0 ;
-                             $(".slider").css("z-index","-1").css("opacity",".5") ;
+                             $(".slider").css("z-index","-1").css("opacity","0") ;
+                             $(".onclick_image").css("display","block").css("opacity","0.5") ;
                 }
                 else{
                         $("#lecture_open1").hide(1000);
                         tmp2=1 ;
                         $(".slider").css("z-index","-1").css("opacity","1") ;
+                        $(".onclick_image").css("display","none") ;
                 }
          
                           
@@ -202,12 +209,14 @@
        if (tmp4==1) {
                         $(".about_open").show(1000);
                         tmp4=0 ;
-                             $(".slider").css("z-index","-1").css("opacity",".5") ;
+                             $(".slider").css("z-index","-1").css("opacity","0") ;
+                             $(".onclick_image").css("display","block").css("opacity","0") ;
                 }
                 else{
                         $(".about_open").hide(1000);
                         tmp4=1 ;
                         $(".slider").css("z-index","-1").css("opacity","1") ;
+                        $(".onclick_image").css("display","none") ;
                 }
         
         
@@ -228,11 +237,13 @@
                 if (tmp5==1) {
                         $(".contact-open").show(1000);
                         tmp5=0 ;
-                             $(".slider").css("z-index","-1").css("opacity",".5") ;
+                             $(".slider").css("z-index","-1").css("opacity","0") ;
+                             $(".onclick_image").css("display","block").css("opacity","0.5") ;
                 }else{
                         $(".contact-open").hide(1000);
                         tmp5=1 ;
                         $(".slider").css("z-index","-1").css("opacity","1") ;
+                        $(".onclick_image").css("display","none") ;
                 }
                  
         

@@ -2,7 +2,7 @@
     font-family: "My Custom Font";
     src:url("Crom_v1.ttf") format("truetype");
 }
-  @font-face {
+  /*@font-face {
     font-family: "My side Font";
     src:url("PLAYSIR Regular.otf") format("truetype");
 }
@@ -10,7 +10,7 @@
  @font-face {
     font-family: "My msg Font";
     src:url("Quikhand.ttf") format("truetype");
-}
+}*/
 @font-face {
     font-family: "My topbar Font";
     src:url("Fonarto.ttf") format("truetype");
@@ -22,7 +22,26 @@ body{
   margin: 0px ;
   
  }
- 
+ .afterbody{
+  position: absolute ;
+  width: 100% ;
+  height: 110% ;
+ }
+ body::-webkit-scrollbar
+{
+	width: 8px;
+	
+	
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+        
+	background-color: crimson;
+	border-radius: 100px ;
+	
+}
  .main-bar{
   position: absolute;
   height: 100%;
@@ -47,6 +66,10 @@ body{
     margin: 0px;
     padding-top: 20px;
     z-index: 10;
+    
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   
  }
  #uiet{
@@ -93,16 +116,19 @@ body{
 	
 	  left: 0px;
 	  padding: 5px;
+	  
 }
         
         .nav-bar{
-            position: fixed ;
-	    top: 144px;
-            width: 17% ;
-	    height: 100%;
+            position: absolute;
+	    top: 147px;
+            width: 17.3% ;
+	    height: 71.4%;
 	    background: cornsilk ;
 	    list-style: none;
-	    
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             
         }
 	/*li{
@@ -110,10 +136,11 @@ body{
 	}*/
        .slider{
              position: absolute ;
-            width: 830px ;
+            width: 810px ;
 	    height: 520px ;
-            left: 17% ;
-            top: 22% ;
+            left: 17.4% ;
+            top: 20% ;
+	    z-index: 5 ;
 	    
             
         }
@@ -127,6 +154,7 @@ body{
 	  width: 231px;
 	  height: 45px;
 	  color: brown ;
+	  cursor: pointer ;
 	}
 	/*#res:hover{
 	  background: white;
@@ -151,6 +179,7 @@ body{
 	#lec i{
 	  font-size: 30px;
 	    color: white;
+	    
 	}
 	
 	
@@ -164,6 +193,7 @@ body{
 	  width: 231px;
 	  height: 45px;
 	  color: brown ;
+	  cursor: pointer ;
 	
 	  
 	}
@@ -181,6 +211,7 @@ body{
 	  width: 231px;
 	  height: 45px;
 	  color: brown ;
+	  
     }
     #quiz:hover{
 	  background: white;
@@ -201,6 +232,7 @@ body{
 	  width: 231px;
 	  height: 45px;
 	  color: brown ;
+	  cursor: pointer ;
     }
      #about:hover{
 	  background: white;
@@ -215,6 +247,7 @@ body{
 	  width: 231px;
 	  height: 45px;
 	  color: brown ;
+	  cursor: pointer ;
     }
     /* #contact:hover{
 	  background: white;
@@ -222,11 +255,11 @@ body{
 	}*/
 	
         .message{
-            position: fixed;
+            position: absolute;
             width: 250px;
 	    height: 136px;
             right: 0px ;
-            bottom: 0px;
+            top:66% ;
 	    padding: 25px;
 	    font-size: 25px;
 	     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -248,8 +281,8 @@ body{
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   width: 300px;
   height: 330px;
-  position: fixed;
-  top: 145px;
+  position: absolute;
+  top: 148px;
   right: 0px;
         }
         .e1{
@@ -332,15 +365,16 @@ body{
              position: absolute;
             background: #FFEBCD;
             left: 230px;
-            top: 0px;
+            top: -2px;
             
             width: 200px;
-	    height: 100%;
+	    height: 73.8%;
             text-align: center;
             padding-top: 140px;
 	    list-style: none;
 	    color: #333 ;
 	    text-align: left ;
+	    z-index: 5 ;
         }
 	
 	#nav-bar-list{
@@ -350,20 +384,29 @@ body{
 	  margin-top:30px;
 	  position: relative;
 	  font-size: 22px ;
+	  cursor: pointer ;
 	  
 	  
-	  
+	}
+	#res_open1:hover{
+	  color: orangered ;
 	}
 	#res_open2{
 	   margin-top:90px;
 	   position: relative;
 	  font-size: 22px ;
-	  
+	  cursor: pointer ;
+	}
+	#res_open2:hover{
+	  color: orangered ;
 	}
 	.onlinecourses{
 	  padding-top: 20px;
 	  text-align: left ;
 	  
+	}
+	.onlinecourses a:hover{
+	  color: tomato ;
 	}
 	.onlinecourses a{
 	  color: black 	 ;
@@ -375,6 +418,7 @@ body{
 	.res3{
 	  margin-top: 20px;
 	  text-align: left ;
+	
 	}
 	.res3 a	{
 	  text-decoration: none ;
@@ -383,6 +427,9 @@ body{
 	  font-size: 15px ;
 	  
 	}
+	.res3 a:hover{
+	  color: tomato ;
+	}
         #resource_open2 {
             
             display: none;
@@ -390,11 +437,12 @@ body{
             background:	#FFE4E1 ;
             left: 240px;
             top: 0px ;
-            height: 100%;
+            height: 88.7%;
             width: 200px;
             text-align: center;
             padding-top: 60px;
 	    list-style: none;
+	    z-index: 5 ;
 	    
          
         }
@@ -410,6 +458,7 @@ body{
             text-align: center;
             padding-top: 0px;
          list-style: none;
+	 z-index: 5 ;
         }
 	.resource_open3_head{
 	  color: black ;
@@ -430,9 +479,9 @@ body{
             display: none;
              position: absolute;
             background: #FFEBCD;
-            left: 230px;
-            top: 0px;
-            height: 100%;
+            left: 231px;
+            top: -2px;
+            height: 73.8%;
             width: 200px;
             text-align: center;
             padding-top: 140px;
@@ -444,21 +493,29 @@ body{
 	#basic1{
 	  margin-top: 50px;
 	  font-size: 22px ;
+	  cursor: pointer ;
 	}
 	#advanced1{
 	  position: relative ;
-	  top: 50px ;
+	  top: 48px ;
 	  margin-top: 50px;
 	  font-size: 22px ;
+	  cursor: pointer ;
+	}
+	#basic1:hover{
+	  color: orangered ;
+	}
+	#advanced1:hover{
+	  color:orangered ;
 	}
          #lecture_openba{
             
             display: none;
              position: absolute;
             background:#FFE4E1;
-	    left: 470px;
-            top: 0px;
-            height: 100%;
+	    left: 471px;
+            top: -2px;
+            height: 73.8%;
             width: 200px;
             text-align: center;
             padding-top: 140px;
@@ -478,9 +535,9 @@ body{
             display: none;
              position: absolute;
             background:#FFE4E1;
-            left: 470px;
-            top: 0px;
-            height: 100%;
+            left: 471px;
+            top: -2px;
+            height: 73.8%;
             width: 200px;
             text-align: center;
             padding-top: 140px;
@@ -501,6 +558,8 @@ body{
 	  color: black ;
 	  font-family: "My side Font" ,Verdana, Tahoma  ;
 	  font-size: 17px ;
+	  cursor: pointer ;
+	
 	}
 	.weekad{
 	  margin-top: 30px;
@@ -508,6 +567,14 @@ body{
 	    color: black ;
 	  font-family: "My side Font" ,Verdana, Tahoma  ;
 	  font-size: 17px ;
+	  cursor: pointer ;
+	  
+	}
+	.weekb:hover{
+	  color: tomato ;
+	}
+	.weekad:hover{
+	  color:tomato ;
 	}
 	
          .wb {
@@ -516,8 +583,8 @@ body{
              position: absolute;
             background:seashell	 ;
             left: 710px;
-            top: 0px;
-            height: 100%;
+            top: -2px;
+            height: 92.8%;
             width: 200px;
             text-align: center;
             padding-top: 40px;
@@ -533,6 +600,10 @@ body{
 	  position: relative ;
 	  top: 80px ;
 	  text-align: left ;
+	  cursor: pointer ;
+	}
+	.notes:hover{
+	  color:red ;
 	}
 	.notes_head{
 	   color: black ;
@@ -547,12 +618,12 @@ body{
 	.hide{
 	  
 	  position: relative ;
-	  background: transparent ;
+	  background: transparent;
 	  z-index: 1000 ;
-	  width: 150px ;
-	  height: 50px ;
-	  top: 610px ;
-	  left: 920px ;
+	  width: 300px ;
+	  height: 200px ;
+	  top: 510px ;
+	  left: 720px ;
 	  
 	}
 	.uietlogo{
@@ -573,24 +644,63 @@ body{
 	}
 	.about_open{
 	  display:none ;
-	  position:absolute ;
+	  position:absolute;
 	  left: 240px ;
 	  width: 800px ;
 	  top:130px ;
-	  height: 100% ;
+	  height: 73% ;
+	  overflow-y: scroll ;
 	  
 	
 	}
+	.about_open h2{
+	  color: brown;
+	}
+	.about_open h4{
+	  color: brown ;
+	}
+	.about_open p{
+	  color: chocolate ;
+	}
+	.about_open li{
+	  color: chocolate ;
+	}
+	.about_open a{
+	  color: chocolate ;
+	}
+	/*#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}*/
+
+#style-4::-webkit-scrollbar
+{
+	width: 5px;
+	
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+        
+	background-color: coral;
+	border-radius: 100px ;
+	border: 1px solid ;
+	border-color: darkorange ;
+}
+
+
 	.abt{
 	    background:#FFF2F5;
 	}
 	.contact-open{
 	  display: none ;
 	  position:absolute ;
-	  left: 190px ;
+	  left: 193px ;
 	  width: 800px ;
-	  top:130px ;
-	  height: 100% ;
+	  top:127px ;
+	  height: 80% ;
 	  
 	}
 	.contact-li li{
@@ -600,7 +710,7 @@ body{
 	  background: white ;
 	  width: 200px ;
 	  
-	  height: 20% ;
+	  height: 32% ;
 	 padding-top: 200px ;
 	}
 	.contact-li i{
@@ -637,6 +747,34 @@ body{
 	}
 	.contact-li-c i{
 	  color: orange ;
+	}
+	.onclick_image{
+	  position: absolute ;
+         
+	  width: 830px ;
+	  height: 400px ;
+	  left: 17.1% ;
+            top: 7.7% ;
+	    display: none ;
+	}
+	.bottom{
+	  background: mistyrose ;
+	  position: absolute ;
+	  width: 100% ;
+	  height: 8% ;
+	  bottom: 0px ;
+	  color: brown ;
+	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	
+	}
+	.bottom span{
+	  font-size: 15px ;
+	  position: absolute ;
+	  top: 20% ;
+	  left: 10% ;
+	  font-family: "My side Font", Verdana, Tahoma;
 	}
 	
 	
