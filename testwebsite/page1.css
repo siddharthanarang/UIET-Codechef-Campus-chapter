@@ -618,11 +618,11 @@ body::-webkit-scrollbar-thumb
 	.hide{
 	  
 	  position: relative ;
-	  background: transparent;
+	  background:transparent ;
 	  z-index: 1000 ;
 	  width: 300px ;
-	  height: 200px ;
-	  top: 510px ;
+	  height: 150px ;
+	  top: 532px ;
 	  left: 720px ;
 	  
 	}
