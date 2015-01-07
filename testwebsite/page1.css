@@ -258,7 +258,7 @@ body::-webkit-scrollbar-thumb
             position: absolute;
             width: 250px;
 	    height: 136px;
-            right: 0px ;
+	    right: 0px;
             top:66% ;
 	    padding: 25px;
 	    font-size: 25px;
