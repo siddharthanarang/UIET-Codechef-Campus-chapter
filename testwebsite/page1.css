@@ -31,7 +31,7 @@ body{
 {
 	width: 8px;
 	
-	height: 8px ;
+	height: 0px ;
 	background-color: #F5F5F5;
 }
 
@@ -41,6 +41,11 @@ body::-webkit-scrollbar-thumb
 	background-color: crimson;
 	border-radius: 100px ;
 	
+}
+@media all and (max-width: 13in) {
+   body::-webkit-scrollbar{
+    height: 8px ;
+  }
 }
 
  .main-bar{
@@ -768,9 +773,10 @@ body::-webkit-scrollbar-thumb
 	.bottom{
 	  background: mistyrose ;
 	  position: absolute ;
-	  width: 100% ;
+	  width: 1355px ;
 	  height: 8% ;
 	  top:675px ;
+	  left: 0px ;
 	  color: brown ;
 	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
